@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="=utf-8">
+        <title>Simulacion</title>
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!--Para escribir en LaTex: Dps ejemplo: $$\frac{1}{2} $$-->
+
+    </head>
+    <body>
+        <h1> Los 10 pasos de la Simulacion</h1>
+        <ol>
+            <li value="1"><h3>Definición del sistema bajo estudio: </h3></li> Se establece el motivo de la simulación, las variables, el alcance, los elementos e iteraciones.
+            <li><h3>Sistema de simulacion base: </h3></li> Se ubican los elementos  en el software de simulacion, se establecen las relaciones, se definen las gráficas, los datos no son importantes, se hace una idea del modelo.
+            <li><h3>Recolección y análisis de los datos: </h3></li>Se realiza un muestreo de los datos, se obtiene informacion estadítica de las variables del modelo, se asocian las distribuciones de probabilidad a variables.
+            <li><h3>Generacion de un modelo preliminar: </h3></li>Se integra la información obtenida al modelo tratando de representar lo más real al sistema bajo estudio.
+            <li><h3>Verificacion del modelo: </h3></li> Se valida el sistema de forma interna, se verifica que compile correctamente, si los parámetros son correctos, si puedo lograr una corrida sin complicaciones.
+            <li><h3>Validacion del modelo: </h3></li> Se trata de una validación externa, verifico que las salidas sean coherentes con el sistema real, interactuo con el cliente.
+            <li><h3>Generacion del modelo final: </h3></li> Una vez verificado y validado obtengo el modelo final, el cual va a ser mi modelo raíz.
+            <li><h3>Determinacion de escenarios alternativos: </h3></li> A partir del modelo raíz se determinan escenarios al ternativos, lo cual se recomienda uno pesimista, uno intermedio y otro optimista.
+            <li><h3>Análisis de sensiblidad: </h3></li>Preguntarse si existen diferencias significativas entre los diferentes escenarios.
+            <li><h3>Documentación del modelo, sugerencias y conclusiones: </b></li> Se documenta todo lo desarrollado, supuestos, variables, conclusiones, aanálisis, alcance, ect, todo.
+        </ol>
+
+        <h1>Clasificación de los modelos</h1>
+
+        <h3>Estocásticos vs Deterministicos</h3>
+        <ul>
+            <li>Estocático: </li> Las variables son aleatorias e inciertas, se representan por medio de distribuciones ded probabilidad.
+            <li>Deterministico: </li> Las variables son ciertas y constantes.
+        </ul>
+
+        <h3>Continuos vs Discretos</h3>
+        <ul>
+            <li>Continuo: </li> Se basan en ecuaciones diferenciales, el reloj tiene un rol importante.
+            <li>Discreto: </li> Las ecuaciones son evaluadas en puntos determinados en el tiempo, el reloj avanza por ocurrencia de los eventos.
+        </ul>
+
+        <h3>Estático vs Dinamico</h3>
+        <ul>
+            <li>Estático: </li> El tiempo no tiene un rol importante, sino que importa el sistema en un determinado momento, como por ejemplo en las pruebas de Monte Carlo. 
+            <li>Dinámicos: </li> Las variables van cambiando a lo largo del tiempo, y nos importa como fluctúa el comportamiento del sistema a lo largo del tiempo
+        </ul>
+    </body>
+</html>
