@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es"> 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>HTML5</title>
+
+    <link rel="stylesheet" href="css/style.css">
+<body>
+    <header>
+        <h1>Mi HTML5</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>    
+            <li><a href="#">Blog</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Nuevas funcionalidades en formularios</h1>
+        <hr>
+        <h2>Nuevos estados del atributo "TYPE"  del input</h2>
+        URL:
+        <input type="url" name="url"/><br>
+        Telefono:
+        <input type="tel" name="tel" pattern="(+[0-9]{2}) [0-9]{9}"/><br>
+        Email:
+        <input type="email" name="email"/><br>
+        Numerico:
+        <input type="number" name="numero" min="1" max="5" value="2"/><br>
+        Color:
+        <input type="color" name="color" value="#123456"/><br>
+        Busqueda:
+        <input type="search" name="busqueda"/><br>
+        Range:
+        <input type="range" name="rango" min="1" max="10"/><br>
+        DateTime:
+        <input type="datetime" name="fechayhora"/><br>
+        Fecha y hora local:
+        <input type="datetime-local" name="local"/><br>
+        Date:
+        <input type="date" name="fecha"/><br>
+        Month:
+        <input type="month" name="mes"/><br>
+        Week:
+        <input type="week" name="semana"/><br>
+        Time:
+        <input type="time" name="hora"/><br>
+
+        <input type="submit" value="Enviar"/><br>
+        <hr>
+
+        <h1>Nuevos atributos de contenido</h1>
+        Autocomplete:
+        
+        <form autocomplete="on">
+            <input type="email" name="email" autocomplete="off"/><br>
+            <input type="submit" value="Enviar"/>
+        </form><br>
+        
+        Autofocus:
+        <input type="text" name="nombre" autofocus/><br> 
+        Min y max: 
+        <input type="number" name="numero" min="1" max="5" value="2"/><br>
+        Step:
+        <input type="number" name="rango" min="1" max="10" step="2"/><br>
+        Pattern con tooltips::
+        <input type="text" name="nombre" pattern="[A-Za-z]{3,}" title="Codigo de 3 letras"/>(Para expresiones regulares)<br>
+        Placeholder:
+        <input type="text" name="nombre" placeholder="Nombre"/><br>
+        Required:
+        <input type="text" name="nombre" required/><br> 
+        Disabled:
+        <input type="text" name="nombre" disabled/><br>
+        Readonly:
+        <input type="text" name="nombre" readonly/><br>
+        <input type="submit" value="Enviar"/>
+        <hr>
+        <h2>Enmarcado por el tipo fieldset</h2>
+        <fieldset>
+            <legend>Nuevos atributos de formulario</legend>
+            <input type="radio" name="nombre" value="Nombre" checked/>Nombre<br>
+            <input type="radio" name="nombre" value="Apellido"/>Apellido<br>  
+            <input type="radio" name="nombre" value="Email"/>Email<br>
+            <input type="submit" value="Enviar"/>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>Nuevos atributos de formulario</legend>
+            <input type="checkbox" name="chk" value="Nombre" checked/>Nombre<br>
+            <input type="checkbox" name="chk" value="Apellido"/>Apellido<br>  
+            <input type="checkbox" name="chk" value="Email"/>Email<br>
+            <input type="submit" value="Enviar"/>
+        </fieldset>
+
+    </main>
+
+
+
+    <aside>
+        <h3>Noticias</h3>
+        <p>este es un lugar para poner noticias</p>
+    </aside>
+    <footer>
+        <p>Derechos reservados</p>
+        <p>Copyright</p>
+    </footer>
+
+</body>
+
+</html>
